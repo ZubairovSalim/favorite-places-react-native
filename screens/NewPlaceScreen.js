@@ -5,7 +5,7 @@ import Colors from '../constants/Colors';
 import {addPlace} from '../store/places-actions';
 
 const NewPlacesScreen = props => {
-    const {titleValue, setTitleValue} = useState('');
+    const [titleValue, setTitleValue] = useState('');
 
     const dispatch = useDispatch();
 
