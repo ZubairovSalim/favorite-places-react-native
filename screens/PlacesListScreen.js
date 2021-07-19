@@ -12,7 +12,7 @@ const PlacesListScreen = props => {
         <FlatList data={places} keyExtractor={item => item.id} renderItem={itemData => {
             return (
                 <PlaceItem
-                    image={null}
+                    image={itemData.item.image}
                     title={itemData.item.title}
                     address={null}
                     onSelect={() => {
